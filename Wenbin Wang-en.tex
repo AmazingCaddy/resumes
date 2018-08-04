@@ -1,0 +1,235 @@
+%!TEX TS-program = xelatex  
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[a4paper]{article}
+\usepackage{fullpage}
+\usepackage[top=0.7in,bottom=1.0in,left=1.2in,right=1.2in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+\usepackage{fontspec}	
+\usepackage[english]{babel}
+
+\setromanfont{Georgia}	
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{\textbf{#1}}\\
+  	%\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[3]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		{\Large \textbf{#1}}\\ \smallskip
+		\lineover
+		\begin{flushright}
+			\emph{#2}\\ \smallskip
+			\emph{#3}\smallskip
+		\end{flushright}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Wenbin Wang}{ecnuwbwang@gmail.com}{(+86)151-2101-7457}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Education}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{East China Normal University} \hfill \emph{2012 - NOW}\\
+	 Master in Computer Application\\
+	%\smallskip
+	\textbf{East China Normal University} \hfill \emph{2008 - 2012}\\
+	Bachelor in Computer Science and Technology\\
+\end{body}
+
+\medskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{Honor}
+\begin{body}
+	\vspace{14pt}
+	Bronze Medal, \emph{ACM} International Collegiate Programming Contest Fuzhou Site. \hfill \emph{2011/11}\\
+	Bronze Medal, \emph{ACM} International Collegiate Programming Contest Beijing Site. \hfill \emph{2011/10}\\
+	Honorable Mention, Mathematical Contest In Modeling. \hfill \emph{2011/02}\\
+	Bronze Medal, \emph{ACM} International Collegiate Programming Contest Beijing Site. \hfill \emph{2010/10}\\
+\end{body}
+
+\medskip
+
+% \newpage{} % uncomment this line if you want to force a new page
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Publications
+\header{Experience}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Baidu Inc.} \hfill Intern\\ 
+	%\smallskip
+	Shanghai, China \hfill \emph{2013/07 - 2013/10}\\ 
+	%\smallskip
+	Work as a test engineer intern in the project of \emph{ADM} (advertisement manager) v2.0  , using black box testing. Reported bugs to the corresponding research developers or front-end web developers.\\
+	\smallskip
+	
+	\textbf{Google Inc.} \hfill Intern\\ 
+	%\smallskip
+	Shanghai, China \hfill \emph{2012/02 - 2012/08}\\ 
+	%\smallskip
+	Work as a web development intern in \emph{CSR Team}. Work on \emph{JSP}, \emph{PHP} and \emph{MySQL}.
+	%\smallskip
+	\vspace*{-6pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Responsible for web site daily maintenance and feature upgrades.\\
+	\end{itemize}
+	\vspace*{-10pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Participated in and completed the website migration from \emph{Java Web} to \emph{PHP}.\\
+	\end{itemize}
+	\vspace*{-12pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Participated projects\\
+		% \smallskip
+		\textbf{Caring for China} \emph{(www.gong1chuang1.com)}. A nationwide competition aimed at empowering China's youth to address pressing social issues through grassroots, innovative solutions.\\
+	\end{itemize}
+\end{body}
+
+\medskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Projects}
+
+\begin{body}
+	\vspace{14pt}
+	
+	{\textbf{Automatic Query Expansion (Research Topic)}} \hfill \emph{2014/03 - NOW}\\
+	%\smallskip
+	The goal of this project is to improve precision and recall of Information Retrieval by using automatic query expansion.\\
+	%\medskip
+	\vspace*{-6pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Participated in the research on query reformulation. A novel query reweighting  method was presented.\\
+	\end{itemize}
+	\vspace*{-12pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Work on \emph{Mac, Indri}.\\
+	\end{itemize}
+	
+	{\textbf{Semantic Search Engine Based On Ontology (Research Topic)}}{} \hfill \emph{2012/12 - 2013/06}\\
+	%\smallskip
+	The goal of this project is to use semantic analysis on search engine to improve its search result with an ontology based semantic search engine model.\\
+	%\medskip
+	\vspace*{-6pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Participated in the research on meta search engine model. Besides using \emph{Google} and \emph{Bing} to have a secondary development, we used the environment based on \emph{Hadoop} and \emph{Nutch}.\\
+	\end{itemize}
+	\vspace*{-12pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Work on \emph{Linux}, \emph{Nutch} and \emph{Hadoop}.\\
+	\end{itemize}
+	
+	{\textbf{Small C Compiler (Course Design)}} \hfill \emph{2011/10 - 2011/12}\\
+	According to the Small C grammar to implement its compiler, using LL(1) parser.\\
+	\vspace*{-6pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Base on the course requirement, some grammar was extended. The compiler has  good error reporting mechanism.\\
+	\end{itemize}
+	\vspace*{-12pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Work on \emph{Java}
+	\end{itemize}
+	
+%	{\textbf{Sudoku Game}}{} \hfill \emph{2010/10 - 2010/12}\\
+%	Beside the traditional 9*9 Sudoku game, some extra rules are added. The software can automatically generate the game situation, give tips and help the users to solve the puzzle.\\
+%	\vspace*{-6pt}
+%	\begin{itemize} \itemsep -0pt  % reduce space between items
+%		\item Responsible for UI design and algorithm module implementation.\\
+%	\end{itemize}
+%	\vspace*{-12pt}
+%	\begin{itemize} \itemsep -0pt  % reduce space between items
+%		\item Using the Dancing Links data structure\\
+%	\end{itemize}
+%	\vspace*{-12pt}
+%	\begin{itemize} \itemsep -0pt  % reduce space between items
+%		\item Work on \emph{C\raise.1ex\hbox{\small{\#}}} and \emph{.NET}
+%	\end{itemize}
+\end{body}
+
+\medskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Leadership
+\header{Skills}
+
+\begin{body}
+	\vspace{14pt}
+	Some experience in Web development, using \emph{PHP}, \emph{MySQL} and \emph{AJAX}.\\ Familiar with algorithm and data structure.\\
+	Programming Language: \emph{C/C\raise.1ex\hbox{\small++}} {(skilled)}, \emph{PHP} {(skilled)}, \emph{Java} {(average skill)}, \emph{Python} {(average skill)} \\
+	English Skill: \emph{CET-6}\\
+\end{body}
+
+\medskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards and Honors
+\header{Hobbies}
+
+\begin{body}
+	\vspace{14pt}
+	Playing table tennis and watching movies.\\
+\end{body}
+
+\end{document}
