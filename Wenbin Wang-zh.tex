@@ -74,8 +74,8 @@
 		{\Large \scshape {#1}}\\ \smallskip
 		\lineover
 		\begin{flushright}
-			\emph{\fontarial #2}\\ \smallskip
-			\emph{\fontarial #3}\smallskip
+			{\fontarial #2}\\ \smallskip
+			{\fontarial #3}\smallskip
 		\end{flushright}
 	\end{changemargin}
 }
@@ -104,75 +104,105 @@
 \renewcommand{\baselinestretch}{1.2} \normalsize
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 教育背景
-\header{教育背景}
+% 工作经历
+\header{工作经历}
 
 \begin{body}
 	\vspace{14pt}
-	{华东师范大学 计算机应用技术 硕士研究生} \hfill \emph{\fontarial 2012 - }至今 \\
+	\textbf{微软} \hfill 软件开发工程师\\ 
 	%\smallskip
-	{华东师范大学 计算机科学与技术 本科} \hfill \emph{\fontarial 2008 - 2012} \\
+	{\fontarial UCM(Unified Customer Management)} \hfill {\fontarial 2015/07 - NOW}\\ 
+	%\smallskip
+	{\fontarial UCM}是{\fontarial Bing Ads}的统一用户管理工具，主要供广告销售团队使用，以此来服务广告主。{\fontarial UCM}是一个{\fontarial Web}产品，整个产品的架构：{\fontarial 1)} 前端是一个{\fontarial SPA}，使用{\fontarial TypeScript}开发，通过{\fontarial Ajax}调用从后端获取数据；{\fontarial 2)} 后端是一个{\fontarial ASP.Net MVC}服务，会从{\fontarial UCM}的数据库和第三方服务获取数据，进行计算，返回给前端；{\fontarial 3)} {\fontarial Azure Data Factory}同步数据到{\fontarial UCM}的数据库。\\
+	%\smallskip
+	本人的主要工作内容：\\ 
+	%\smallskip
+	\vspace*{-6pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 前端的功能开发、维护和性能优化，参与优化{\fontarial SPA First Load Time}过长，局部刷新性能优化。\\
+	\end{itemize}
+	\vspace*{-12pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 参与优化{\fontarial SPA}页面第一次加载时间太长的问题。\\
+	\end{itemize}
+	\vspace*{-12pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 参与前端技术更新，将{\fontarial React}和{\fontarial UCM}的旧代码{\fontarial (kendo+knockout)}整合，使它们能够一起工作。\\
+	\end{itemize}
+	\vspace*{-12pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 作为{\fontarial sub lead}，带领两个同事，负责和{\fontarial PM}沟通需求，执行前端开发。\\
+	\end{itemize}
 \end{body}
 
 \medskip
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 实习经历
+\header{实习经历}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{百度} \hfill 测试实习生\\ 
+	%\smallskip
+	广告管家 \hfill {\fontarial 2013/07 - 2013/10}\\ 
+	%\smallskip
+	参与百度广告管家{\fontarial 2.0}版本业务端的部分测试工作，使用{\fontarial Selenium}完成自动化测试。
+	%\smallskip
+
+	\vspace{6pt}
+	\textbf{谷歌-企业社会责任部} \hfill 实习生\\ 
+	%\smallskip
+	益暖中华{\fontarial (G1C1)} \hfill {\fontarial 2012/02 - 2012/08}\\ 
+	%\smallskip
+	主要负责{\fontarial Java+MySQL}以及{\fontarial PHP+MySQL}的网站开发工作。\\ 
+	%\smallskip
+	\vspace*{-6pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 负责益暖中华{\fontarial(www.gong1chuang1.com)}网站日常维护和功能升级。\\
+	\end{itemize}
+	\vspace*{-12pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 参与完成益暖中华主网站的迁移，从{\fontarial Java Web}迁移到{\fontarial PHP}。\\
+	\end{itemize}
+	\vspace*{-12pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 负责实习生招聘，涉及整个沟通、面试及入职流程。\\
+	\end{itemize}
+\end{body}
+
+\medskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 教育经历
+\header{教育经历}
+
+\begin{body}
+	\vspace{14pt}
+	{华东师范大学 计算机应用技术 硕士研究生} \hfill {\fontarial 2012/09 - 2015/06} \\
+	%\smallskip
+	{华东师范大学 计算机科学与技术 本科} \hfill {\fontarial 2008/09 - 2012/06} \\
+\end{body}
+
+\medskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 获奖经历
 \header{获奖经历}
 \begin{body}
 	\vspace{14pt}
-	{\emph{\fontarial ACM/ICPC} 国际大学生程序设计竞赛福州赛区 铜奖} \hfill \emph{\fontarial 2011/11}\\
+	{{\fontarial ACM/ICPC} 国际大学生程序设计竞赛福州赛区 铜奖} \hfill {\fontarial 2011/11}\\
 	%\smallskip
-	{\emph{\fontarial ACM/ICPC} 国际大学生程序设计竞赛北京赛区 铜奖} \hfill \emph{\fontarial 2011/10}\\
+	{{\fontarial ACM/ICPC} 国际大学生程序设计竞赛北京赛区 铜奖} \hfill {\fontarial 2011/10}\\
 	%\smallskip
-	{\emph{\fontarial MCM} 美国大学生数学建模大赛 二等奖} \hfill \emph{\fontarial 2011/02}\\
+	{{\fontarial MCM} 美国大学生数学建模大赛 二等奖} \hfill {\fontarial 2011/02}\\
 	%\smallskip
-	{\emph{\fontarial ACM/ICPC} 国际大学生程序设计竞赛天津赛区 铜奖} \hfill \emph{\fontarial 2010/10}\\
+%	{{\fontarial ACM/ICPC} 国际大学生程序设计竞赛天津赛区 铜奖} \hfill {\fontarial 2010/10}\\
 \end{body}
 
 \medskip
 
-% \newpage{} % uncomment this line if you want to force a new page
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 工作经历
-\header{工作经历}
-
-\begin{body}
-	\vspace{14pt}
-	\textbf{百度} \hfill 实习生\\ 
-	%\smallskip
-	地点:上海 \hfill \emph{\fontarial 2013/07 - 2013/10}\\ 
-	%\smallskip
-	参与百度广告管家2.0版本业务端的部分测试工作，从测试的角度为整个项目提供支持。
-	%\smallskip
-	
-	\vspace{6pt}
-	\textbf{谷歌-企业社会责任部} \hfill 实习生\\ 
-	%\smallskip
-	地点:上海 \hfill \emph{\fontarial 2012/02 - 2012/08}\\ 
-	%\smallskip
-	主要负责 \emph{\fontarial Java+MySQL} 以及 \emph{\fontarial PHP+MySQL} 的网站开发工作。\\ 
-	%\smallskip
-	\vspace*{-6pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 负责网站日常维护和功能升级。\\
-	\end{itemize}
-	\vspace*{-12pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 参与完成网站的迁移，从\emph{\fontarial Java Web}迁移到\emph{\fontarial PHP}。\\
-	\end{itemize}
-	\vspace*{-12pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 参与项目\\
-		% \smallskip
-		\textbf{益暖中华} \emph{\fontarial(www.gong1chuang1.com)} 一个提供平台，征集创意，资助获奖团队进行创意实施的大学生公益大赛。\\
-	\end{itemize}
-\end{body}
-
-\medskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 项目经历
@@ -181,42 +211,42 @@
 \begin{body}
 	\vspace{14pt}
 	
-	{\textbf{自动查询扩展技术研究 研究课题}}{} \hfill \emph{\fontarial 2014/03 - }至今\\
+	%{\textbf{自动查询扩展技术研究 研究课题}}{} \hfill \emph{\fontarial 2014/03 - }至今\\
 	%\smallskip
-	项目描述：本课题目标是通过查询扩展技术，提高信息检索的准确率。\\
+	%项目描述：本课题目标是通过查询扩展技术，提高信息检索的准确率。\\
 	%\medskip
-	\vspace*{-6pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 参与研究查询词权重调整\emph{\fontarial(query reweighting)}技术，提出了一种基于全局分析的权重计算公式。\\
-	\end{itemize}
-	\vspace*{-12pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 技术环境：\emph{\fontarial Mac Indri}\\
-	\end{itemize}
+	%\vspace*{-6pt}
+	%\begin{itemize} \itemsep -0pt  % reduce space between items
+	%	\item 参与研究查询词权重调整\emph{\fontarial(query reweighting)}技术，提出了一种基于全局分析的权重计算公式。\\
+	%\end{itemize}
+	%\vspace*{-12pt}
+	%\begin{itemize} \itemsep -0pt  % reduce space between items
+	%	\item 技术环境：\emph{\fontarial Mac Indri}\\
+	%\end{itemize}
 	
-	{\textbf{基于本体的语意搜索引擎的开发与研究 研究课题}}{} \hfill \emph{\fontarial 2012/12 - 2013/06}\\
+	{\textbf{基于本体的语意搜索引擎的开发与研究 研究课题}}{} \hfill {\fontarial 2012/12 - 2013/06}\\
 	%\smallskip
 	项目描述：本课题目标是将语义分析的技术引入到搜索引擎，改善当前搜索引擎的搜索效果，提出基于本体的语意搜索引擎模型，来提高搜索结果的准确率。\\
 	%\medskip
 	\vspace*{-6pt}
 	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 参与搜索引擎模块的研究，除了使用现成的\emph{\fontarial Google}和\emph{\fontarial Bing}，采用\emph{\fontarial Hadoop}云环境和\emph{\fontarial Nutch}搜索引擎。\\
+		\item 参与搜索引擎模块的研究，除了使用现成的{\fontarial Google}和{\fontarial Bing}，采用{\fontarial Hadoop}云环境和{\fontarial Nutch}搜索引擎。\\
 	\end{itemize}
 	\vspace*{-12pt}
 	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 技术环境：\emph{\fontarial Linux Nutch Hadoop}\\
+		\item 技术环境：{\fontarial Linux Nutch Hadoop}\\
 	\end{itemize}
 	
-	{\textbf{Small C编译器 课程设计}}{} \hfill \emph{\fontarial 2011/10 - 2011/12}\\
-	项目描述：根据文法，使用\emph{\fontarial LL(1)}方法，实现一个\emph{\fontarial Small C}编译器。\\
-	\vspace*{-6pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 在课程要求的基础上，新增了一些语法的实现，有比较完善的编译报错机制。\\
-	\end{itemize}
-	\vspace*{-12pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 技术环境：\emph{\fontarial Java}\\
-	\end{itemize}
+%	{\textbf{{\fontarial Small C}编译器 课程设计}}{} \hfill {\fontarial 2011/10 - 2011/12}\\
+%	项目描述：根据文法，使用{\fontarial LL(1)}方法，实现一个{\fontarial Small C}编译器。\\
+%	\vspace*{-6pt}
+%	\begin{itemize} \itemsep -0pt  % reduce space between items
+%		\item 在课程要求的基础上，新增了一些语法的实现，有比较完善的编译报错机制。\\
+%	\end{itemize}
+%	\vspace*{-12pt}
+%	\begin{itemize} \itemsep -0pt  % reduce space between items
+%		\item 技术环境：{\fontarial Java}\\
+%	\end{itemize}
 	
 %	{\textbf{数独游戏 课程设计}}{} \hfill \emph{\fontmenlo2010/10 - 2010/12}\\
 %	项目描述：在传统的 {\fontmenlo 9×9} 数独游戏基础上，定制规则。该小软件可以自动生成游戏局面，提供答案，还支持手动输入数独，帮助用户解答。\\
@@ -232,16 +262,20 @@
 
 \medskip
 
+% \newpage{} % uncomment this line if you want to force a new page
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 个人技能
-\header{个人技能}
+% 自我评价
+\header{自我评价}
 
 \begin{body}
 	\vspace{14pt}
-	具有 {\fontarial Web} 开发基础和经验\\
-	较好的掌握了算法和数据结构\\
-	编程语言：\emph{\fontarial C/C\raise.3ex\hbox{\small++}}熟练 \emph{\fontarial PHP}熟练 \emph{\fontarial Java}一般 \emph{\fontarial Python}一般\\
-	英语技能：\emph{\fontarial CET-6}\\
+	做事专注，喜欢钻研，相信技术改变世界。\\
+	乐观开朗，热爱生活，一个发散正能量的人。\\
+%	具有{\fontarial Web}前端开发基础和经验 涉及过后端的开发\\
+%	较好的掌握了算法和数据结构\\
+%	编程语言：{\fontarial TypeScript/JavaScript/ES6} {\fontarial C/C\raise.3ex\hbox{\small++}} {\fontarial Python} {\fontarial Java}\\
+%	英语技能：{\fontarial CET-6}\\
 \end{body}
 
 \medskip
@@ -253,7 +287,7 @@
 
 \begin{body}
 	\vspace{14pt}
-	乒乓球 电影\\
+	烹饪 羽毛球 电影\\
 \end{body}
 
 \end{document}
