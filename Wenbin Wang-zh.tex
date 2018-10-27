@@ -3,7 +3,7 @@
 
 \documentclass[a4paper]{article}
 \usepackage{fullpage}
-\usepackage[top=0.7in,bottom=1.0in,left=1.2in,right=1.2in]{geometry}
+\usepackage[top=0.7in,bottom=1.0in,left=1.3in,right=1.3in]{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[usenames]{color}
@@ -14,7 +14,7 @@
 \usepackage{xltxtra}								% for XeLaTex User \XeLaTex
 
 \defaultfontfeatures{Mapping=tex-text}
-\setromanfont{宋体}								% 设置中文字体
+\setromanfont{微软雅黑}								% 设置中文字体
 %\setmainfont{Kai}								% 默认字体 
 \setmonofont{Consolas}								% 默认等宽字体
 \setsansfont{Arial}									% 英文无衬线字体
@@ -64,25 +64,25 @@
 
 \newcommand{\header}[1]{
 	\begin{changemargin}{-0.5in}{-0.5in}
-		\scshape{\textbf{#1}}\\
+	\fontsize{12}{14} \scshape{\textbf{#1}}\\
   	%\lineover
 	\end{changemargin}
 }
 
 \newcommand{\contact}[3]{
 	\begin{changemargin}{-0.5in}{-0.5in}
-		{\Large \scshape {#1}}\\ \smallskip
+		{\fontsize{15}{18} \scshape \textbf{#1}}\\ \smallskip
 		\lineover
 		\begin{flushright}
-			{\fontarial #2}\\ \smallskip
-			{\fontarial #3}\smallskip
+			{\fontarial \emph{#2}}\\ \smallskip
+			{\fontarial \emph{#3}}\smallskip
 		\end{flushright}
 	\end{changemargin}
 }
 
 \newenvironment{body} {
 	\vspace*{-16pt}
-	\begin{changemargin}{-0.25in}{-0.5in}
+	\begin{changemargin}{-0.5in}{-0.5in}
   }	
 	{\end{changemargin}
 }	
@@ -104,17 +104,43 @@
 \renewcommand{\baselinestretch}{1.2} \normalsize
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 工作经历
-\header{工作经历}
+% 教育经历
+\header{教育经历}
 
 \begin{body}
 	\vspace{14pt}
+	{华东师范大学 计算机应用技术 硕士研究生} \hfill {\fontarial 2012/09 - 2015/06} \\
+	%\smallskip
+	{华东师范大学 计算机科学与技术 本科} \hfill {\fontarial 2008/09 - 2012/06} \\
+\end{body}
+
+\medskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 项目经历
+\header{项目经历}
+
+\begin{body}
+	\vspace{16pt}
 	\textbf{微软} \hfill 软件开发工程师\\ 
 	%\smallskip
-	{\fontarial UCM(Unified Customer Management)} \hfill {\fontarial 2015/07 - NOW}\\ 
+	\textbf{\fontarial UCM(Unified Customer Management)} \hfill {\fontarial 2015/07 - NOW}\\ 
 	%\smallskip
-	{\fontarial UCM}是{\fontarial Bing Ads}的统一用户管理工具，主要供广告销售团队使用，以此来服务广告主。{\fontarial UCM}是一个{\fontarial Web}产品，整个产品的架构：{\fontarial 1)} 前端是一个{\fontarial SPA}，使用{\fontarial TypeScript}开发，通过{\fontarial Ajax}调用从后端获取数据；{\fontarial 2)} 后端是一个{\fontarial ASP.Net MVC}服务，会从{\fontarial UCM}的数据库和第三方服务获取数据，进行计算，返回给前端；{\fontarial 3)} {\fontarial Azure Data Factory}同步数据到{\fontarial UCM}的数据库。\\
+	{\fontarial UCM}是{\fontarial Bing Ads}的统一用户管理工具，主要供广告销售团队使用，以此来服务广告主。{\fontarial UCM}是一个{\fontarial Web}产品，整个产品的架构：\\
+	\vspace*{-6pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 前端是一个{\fontarial SPA}，使用{\fontarial TypeScript}开发，通过{\fontarial Ajax}调用从后端获取数据。\\
+	\end{itemize}
+	\vspace*{-12pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 后端是一个{\fontarial ASP.Net MVC}服务，会从{\fontarial UCM}的数据库和第三方服务获取数据，进行计算，返回给前端。\\
+	\end{itemize}
+	\vspace*{-12pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item {\fontarial Azure Data Factory}同步数据到{\fontarial UCM}的数据库。\\
+	\end{itemize}
 	%\smallskip
+	\vspace*{-6pt}
 	本人的主要工作内容：\\ 
 	%\smallskip
 	\vspace*{-6pt}
@@ -123,38 +149,31 @@
 	\end{itemize}
 	\vspace*{-12pt}
 	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 参与优化{\fontarial SPA}页面第一次加载时间太长的问题。\\
+		\item 基于{\fontarial UCM}前端的代码框架，增强了前端单元测试框架，降低开发成本。\\
 	\end{itemize}
 	\vspace*{-12pt}
 	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 参与前端技术更新，将{\fontarial React}和{\fontarial UCM}的旧代码{\fontarial (kendo+knockout)}整合，使它们能够一起工作。\\
+		\item 参与前端技术更新，将{\fontarial React}和{\fontarial UCM}的现有代码整合，使它们能够一起工作。\\
 	\end{itemize}
 	\vspace*{-12pt}
 	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 作为{\fontarial sub lead}，带领两个同事，负责和{\fontarial PM}沟通需求，执行前端开发。\\
+		\item 作为{\fontarial sub lead (2018/05 -)}，带领两个同事，负责和{\fontarial PM}沟通需求，执行前端开发。\\
 	\end{itemize}
-\end{body}
-
-\medskip
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 实习经历
-\header{实习经历}
-
-\begin{body}
-	\vspace{14pt}
+	\vspace*{-2pt}
+	\textbf{智能客服多轮对话系统} \hfill {\fontarial 2018/06 - 2018/09}\\ 
+	该系统是基于意图识别和填槽技术的面向任务的对话系统，采用微服务架构，包含对话任务设计、对话模板管理和对话逻辑处理三部分。该系统提供{\fontarial Web UI}允许管理员自定义对话任务模板，并提供聊天窗口让用户与机器人进行多轮对话。本人负责开发对话模板管理的{\fontarial Web UI}部分，使用{\fontarial React}开发。\\
+	\vspace{10pt}
 	\textbf{百度} \hfill 测试实习生\\ 
 	%\smallskip
-	广告管家 \hfill {\fontarial 2013/07 - 2013/10}\\ 
+	\textbf{广告管家} \hfill {\fontarial 2013/07 - 2013/10}\\ 
 	%\smallskip
 	参与百度广告管家{\fontarial 2.0}版本业务端的部分测试工作，使用{\fontarial Selenium}完成自动化测试。
 	%\smallskip
 
-	\vspace{6pt}
+	\vspace{10pt}
 	\textbf{谷歌-企业社会责任部} \hfill 实习生\\ 
 	%\smallskip
-	益暖中华{\fontarial (G1C1)} \hfill {\fontarial 2012/02 - 2012/08}\\ 
+	\textbf{益暖中华{\fontarial (G1C1)}} \hfill {\fontarial 2012/02 - 2012/08}\\ 
 	%\smallskip
 	主要负责{\fontarial Java+MySQL}以及{\fontarial PHP+MySQL}的网站开发工作。\\ 
 	%\smallskip
@@ -174,18 +193,6 @@
 
 \medskip
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 教育经历
-\header{教育经历}
-
-\begin{body}
-	\vspace{14pt}
-	{华东师范大学 计算机应用技术 硕士研究生} \hfill {\fontarial 2012/09 - 2015/06} \\
-	%\smallskip
-	{华东师范大学 计算机科学与技术 本科} \hfill {\fontarial 2008/09 - 2012/06} \\
-\end{body}
-
-\medskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 获奖经历
@@ -206,10 +213,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 项目经历
-\header{项目经历}
+%\header{项目经历}
 
-\begin{body}
-	\vspace{14pt}
+%\begin{body}
+%	\vspace{14pt}
 	
 	%{\textbf{自动查询扩展技术研究 研究课题}}{} \hfill \emph{\fontarial 2014/03 - }至今\\
 	%\smallskip
@@ -224,18 +231,18 @@
 	%	\item 技术环境：\emph{\fontarial Mac Indri}\\
 	%\end{itemize}
 	
-	{\textbf{基于本体的语意搜索引擎的开发与研究 研究课题}}{} \hfill {\fontarial 2012/12 - 2013/06}\\
+%	{\textbf{基于本体的语意搜索引擎的开发与研究 研究课题}}{} \hfill {\fontarial 2012/12 - 2013/06}\\
 	%\smallskip
-	项目描述：本课题目标是将语义分析的技术引入到搜索引擎，改善当前搜索引擎的搜索效果，提出基于本体的语意搜索引擎模型，来提高搜索结果的准确率。\\
+%	项目描述：本课题目标是将语义分析的技术引入到搜索引擎，改善当前搜索引擎的搜索效果，提出基于本体的语意搜索引擎模型，来提高搜索结果的准确率。\\
 	%\medskip
-	\vspace*{-6pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 参与搜索引擎模块的研究，除了使用现成的{\fontarial Google}和{\fontarial Bing}，采用{\fontarial Hadoop}云环境和{\fontarial Nutch}搜索引擎。\\
-	\end{itemize}
-	\vspace*{-12pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 技术环境：{\fontarial Linux Nutch Hadoop}\\
-	\end{itemize}
+%	\vspace*{-6pt}
+%	\begin{itemize} \itemsep -0pt  % reduce space between items
+%		\item 参与搜索引擎模块的研究，除了使用现成的{\fontarial Google}和{\fontarial Bing}，采用{\fontarial Hadoop}云环境和{\fontarial Nutch}搜索引擎。\\
+%	\end{itemize}
+%	\vspace*{-12pt}
+%	\begin{itemize} \itemsep -0pt  % reduce space between items
+%		\item 技术环境：{\fontarial Linux Nutch Hadoop}\\
+%	\end{itemize}
 	
 %	{\textbf{{\fontarial Small C}编译器 课程设计}}{} \hfill {\fontarial 2011/10 - 2011/12}\\
 %	项目描述：根据文法，使用{\fontarial LL(1)}方法，实现一个{\fontarial Small C}编译器。\\
@@ -258,9 +265,9 @@
 %	\begin{itemize} \itemsep -0pt  % reduce space between items
 %		\item 技术环境：\emph{\fontmenlo C\raise.3ex\hbox{\small{\#}} .NET}\\
 %	\end{itemize}
-\end{body}
+%\end{body}
 
-\medskip
+%\medskip
 
 % \newpage{} % uncomment this line if you want to force a new page
 
@@ -270,15 +277,25 @@
 
 \begin{body}
 	\vspace{14pt}
+	具有{\fontarial 2-3}年{\fontarial Web}前端开发经验，涉及过后端的开发，掌握了常用的算法和数据结构。\\
 	做事专注，喜欢钻研，相信技术改变世界。\\
-	乐观开朗，热爱生活，一个发散正能量的人。\\
-%	具有{\fontarial Web}前端开发基础和经验 涉及过后端的开发\\
-%	较好的掌握了算法和数据结构\\
-%	编程语言：{\fontarial TypeScript/JavaScript/ES6} {\fontarial C/C\raise.3ex\hbox{\small++}} {\fontarial Python} {\fontarial Java}\\
-%	英语技能：{\fontarial CET-6}\\
+	编程语言：{\fontarial TypeScript/JavaScript/ES6}(熟练) {\fontarial C/C\raise.3ex\hbox{\small++}/Python/Java/PHP}(熟悉)\\
+	英语技能：{\fontarial CET-6}\\
 \end{body}
 
 \medskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 自我评价
+%\header{自我评价}
+
+%\begin{body}
+%	\vspace{14pt}
+%	做事专注，喜欢钻研，相信技术改变世界。\\
+%	乐观开朗，热爱生活，一个发散正能量的人。\\
+%\end{body}
+
+%\medskip
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
