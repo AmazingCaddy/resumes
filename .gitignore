@@ -4,3 +4,5 @@
 *.pdf
 *.fdb_latexmk
 *.gz
+
+.vscode
