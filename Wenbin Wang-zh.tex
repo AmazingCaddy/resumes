@@ -14,9 +14,9 @@
 \usepackage{xltxtra}								% for XeLaTex User \XeLaTex
 
 \defaultfontfeatures{Mapping=tex-text}
-\setromanfont{微软雅黑}								% 设置中文字体
-%\setmainfont{Kai}								% 默认字体 
-\setmonofont{Consolas}								% 默认等宽字体
+\setromanfont{PingFang SC}								% 设置中文字体
+\setmainfont{PingFang SC}								% 默认字体 
+%\setmonofont{Consolas}								% 默认等宽字体
 \setsansfont{Arial}									% 英文无衬线字体
 \XeTeXlinebreaklocale “zh”
 \XeTeXlinebreakskip = 0.1pt plus 1pt minus 1.5pt		%文章内中文自动换行
@@ -28,7 +28,7 @@
 %\newfontfamily{\fonthei}{SimHei}					% 黑体
 \newfontfamily{\fontarial}{Arial}					% Arial
 %\newfontfamily{\fonthelvetica}{Helvetica}			% Helvetica
-\newfontfamily{\fontconsolas}{Consolas}				% Consolas
+%\newfontfamily{\fontconsolas}{Consolas}				% Consolas
 %\newfontfamily{\fonttimes}{Times}					% Times
 \newfontfamily{\fontmenlo}{Menlo}					% Menlo
 %\newfontfamily{\fontgillsnas}{Gill Sans}				% Gill Sans
@@ -109,38 +109,49 @@
 
 \begin{body}
 	\vspace{14pt}
-	{华东师范大学 计算机应用技术 硕士研究生} \hfill {\fontarial 2012/09 - 2015/06} \\
+	{华东师范大学 计算机应用技术 硕士} \hfill {\fontarial 2012/09 - 2015/06} \\
 	%\smallskip
-	{华东师范大学 计算机科学与技术 本科} \hfill {\fontarial 2008/09 - 2012/06} \\
+	{华东师范大学 计算机科学与技术 学士} \hfill {\fontarial 2008/09 - 2012/06} \\
 \end{body}
 
 \medskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 项目经历
-\header{项目经历}
+% 工作经历
+\header{工作经历}
 
 \begin{body}
-	\vspace{16pt}
-	\textbf{微软} \hfill 软件开发工程师\\ 
+	\vspace{14pt}
+	\textbf{苏州美能华智能科技} \hfill 全栈工程师 {\fontarial 2019/04 - }\\
+	\smallskip
+	作为交付团队领导者和主力研发，从零参与完成了多个项目，包括：智能客服系统，智能审批系统等。负责与项目经理沟通客户的需求，完成系统设计，并且带领团队完成系统开发、部署交付以及后期维护。\\
+	\vspace{2pt}
+	作为产品团队主力研发，从零参与多个产品的研发，包括：小星助手（{\fontarial https://xiaoxing.meinenghua.com}），星原{\fontarial AI+RPA}平台（{\fontarial https://xingyuan.meinenghua.com}）等。负责与产品经理沟通需求，完成系统设计，定制产品计划和研发计划，带领团队成员一起完成产品开发和周期性的发布。\\
+	\vspace{2pt}
+	负责公司所有项目和产品的部署运维工作。针对B端客户常见的私有化部署需求，开发了一套部署工具，该工具只需要客户提供装有Linux操作系统的服务器，即便在完全断网的情况下，也能完成基础软件的安装和应用服务的部署，降低部署门槛。\\
+	\vspace{2pt}
+	涉及技术：{\fontarial Vue.js, Node.js, PostgreSQL, Docker, Kubernetes, Nginx}\\
+
+	\vspace{10pt}
+	\textbf{微软（苏州）} \hfill 软件工程师 {\fontarial 2015/07 - 2019/03}\\ 
+	\smallskip
+	%\textbf{\fontarial UCM(Unified Customer Management)} \hfill {\fontarial 2015/07 - 2019/03}\\ 
 	%\smallskip
-	\textbf{\fontarial UCM(Unified Customer Management)} \hfill {\fontarial 2015/07 - NOW}\\ 
+	本人在{\fontarial Bing Ads}部门的{\fontarial UCM}团队工作。{\fontarial UCM}是一款供广告销售团队使用的用户管理工具。% {\fontarial UCM}是一个{\fontarial Web}产品，整个产品的架构：\\
+	% \vspace*{-6pt}
+	% \begin{itemize} \itemsep -0pt  % reduce space between items
+	% 	\item 前端是一个{\fontarial SPA}，使用{\fontarial TypeScript}开发，通过{\fontarial Ajax}调用从后端获取数据。\\
+	% \end{itemize}
+	% \vspace*{-12pt}
+	% \begin{itemize} \itemsep -0pt  % reduce space between items
+	% 	\item 后端是一个{\fontarial ASP.Net MVC}服务，会从{\fontarial UCM}的数据库和第三方服务获取数据，进行计算，返回给前端。\\
+	% \end{itemize}
+	% \vspace*{-12pt}
+	% \begin{itemize} \itemsep -0pt  % reduce space between items
+	% 	\item {\fontarial Azure Data Factory}同步数据到{\fontarial UCM}的数据库。\\
+	% \end{itemize}
 	%\smallskip
-	{\fontarial UCM}是{\fontarial Bing Ads}的统一用户管理工具，主要供广告销售团队使用，以此来服务广告主。{\fontarial UCM}是一个{\fontarial Web}产品，整个产品的架构：\\
-	\vspace*{-6pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 前端是一个{\fontarial SPA}，使用{\fontarial TypeScript}开发，通过{\fontarial Ajax}调用从后端获取数据。\\
-	\end{itemize}
-	\vspace*{-12pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 后端是一个{\fontarial ASP.Net MVC}服务，会从{\fontarial UCM}的数据库和第三方服务获取数据，进行计算，返回给前端。\\
-	\end{itemize}
-	\vspace*{-12pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item {\fontarial Azure Data Factory}同步数据到{\fontarial UCM}的数据库。\\
-	\end{itemize}
-	%\smallskip
-	\vspace*{-6pt}
+	% \vspace*{-6pt}
 	本人的主要工作内容：\\ 
 	%\smallskip
 	\vspace*{-6pt}
@@ -155,27 +166,25 @@
 	\begin{itemize} \itemsep -0pt  % reduce space between items
 		\item 参与前端技术更新，将{\fontarial React}和{\fontarial UCM}的现有代码整合，使它们能够一起工作。\\
 	\end{itemize}
-	\vspace*{-12pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item 作为{\fontarial sub lead (2018/05 -)}，带领两个同事，负责和{\fontarial PM}沟通需求，执行前端开发。\\
-	\end{itemize}
-	\vspace*{-2pt}
-	\textbf{智能客服多轮对话系统} \hfill {\fontarial 2018/06 - 2018/09}\\ 
-	该系统是基于意图识别和填槽技术的面向任务的对话系统，采用微服务架构，包含对话任务设计、对话模板管理和对话逻辑处理三部分。该系统提供{\fontarial Web UI}允许管理员自定义对话任务模板，并提供聊天窗口让用户与机器人进行多轮对话。本人负责开发对话模板管理的{\fontarial Web UI}部分，使用{\fontarial React}开发。\\
+	\vspace*{-4pt}
+	涉及技术：{\fontarial jQuery.js, Bootstrap.js, React}\\
+	% \textbf{智能客服多轮对话系统} \hfill {\fontarial 2018/06 - 2018/09}\\ 
+	% 该系统是基于意图识别和填槽技术的面向任务的对话系统，采用微服务架构，包含对话任务设计、对话模板管理和对话逻辑处理三部分。该系统提供{\fontarial Web UI}允许管理员自定义对话任务模板，并提供聊天窗口让用户与机器人进行多轮对话。本人负责开发对话模板管理的{\fontarial Web UI}部分，使用{\fontarial React}开发。\\
+
 	\vspace{10pt}
-	\textbf{百度} \hfill 测试实习生\\ 
+	\textbf{百度} \hfill 实习生 {\fontarial 2013/07 - 2013/10}\\ 
+	\smallskip
+	%\textbf{广告管家} \hfill {\fontarial 2013/07 - 2013/10}\\ 
 	%\smallskip
-	\textbf{广告管家} \hfill {\fontarial 2013/07 - 2013/10}\\ 
-	%\smallskip
-	参与百度广告管家{\fontarial 2.0}版本业务端的部分测试工作，使用{\fontarial Selenium}完成自动化测试。
+	参与百度广告管家{\fontarial 2.0}版本业务端的部分测试工作，使用{\fontarial Selenium}完成自动化测试用例的开发。
 	%\smallskip
 
 	\vspace{10pt}
-	\textbf{谷歌-企业社会责任部} \hfill 实习生\\ 
+	\textbf{谷歌-企业社会责任部} \hfill 实习生 {\fontarial 2012/02 - 2012/08}\\ 
+	\smallskip
+	%\textbf{益暖中华{\fontarial (G1C1)}} \hfill {\fontarial 2012/02 - 2012/08}\\ 
 	%\smallskip
-	\textbf{益暖中华{\fontarial (G1C1)}} \hfill {\fontarial 2012/02 - 2012/08}\\ 
-	%\smallskip
-	主要负责{\fontarial Java+MySQL}以及{\fontarial PHP+MySQL}的网站开发工作。\\ 
+	参与益暖中华{\fontarial (G1C1)}项目，主要负责{\fontarial Java+MySQL}以及{\fontarial PHP+MySQL}的网站开发工作。\\ 
 	%\smallskip
 	\vspace*{-6pt}
 	\begin{itemize} \itemsep -0pt  % reduce space between items
@@ -185,10 +194,30 @@
 	\begin{itemize} \itemsep -0pt  % reduce space between items
 		\item 参与完成益暖中华主网站的迁移，从{\fontarial Java Web}迁移到{\fontarial PHP}。\\
 	\end{itemize}
+
 \end{body}
 
 \medskip
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 项目经历
+% \header{项目经历}
+
+% \begin{body}
+% 	\vspace{14pt}
+% 	\textbf{智能客服系统} \hfill 全栈工程师 {\fontarial 2019/04 - }\\
+% 	\smallskip
+% 	该项目重点
+% 	作为交付团队领导者和主力研发，从零参与完成了多个项目，包括：智能客服系统，智能审批系统等。负责与项目经理沟通客户的需求，完成系统设计，并且带领团队完成系统开发、部署交付以及后期维护。\\
+% 	\vspace{2pt}
+% 	作为产品团队主力研发，从零参与多个产品的研发，包括：小星助手（{\fontarial https://xiaoxing.meinenghua.com}），星原{\fontarial AI+RPA}平台（{\fontarial https://xingyuan.meinenghua.com}）等。负责与产品经理沟通需求，完成系统设计，定制产品计划和研发计划，带领团队成员一起完成产品开发和周期性的发布。\\
+% 	\vspace{2pt}
+% 	负责公司所有项目和产品的部署运维工作。针对B端客户常见的私有化部署需求，开发了一套部署工具，该工具只需要客户提供装有Linux操作系统的服务器，即便在完全断网的情况下，也能完成基础软件的安装和应用服务的部署，降低部署门槛。\\
+% 	\vspace{2pt}
+% 	涉及技术：{\fontarial Vue.js, Node.js, PostgreSQL, Docker, Kubernetes, Nginx}\\
+% \end{body}
+
+% \medskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 获奖经历
@@ -273,10 +302,10 @@
 
 \begin{body}
 	\vspace{14pt}
-	具有{\fontarial 2-3}年{\fontarial Web}前端开发经验，涉及过后端的开发，掌握了常用的算法和数据结构。\\
-	做事专注，喜欢钻研，相信技术改变世界。\\
-	编程语言：{\fontarial TypeScript/JavaScript/ES6}(熟练) {\fontarial C/C\raise.3ex\hbox{\small++}/Python/Java/PHP}(熟悉)\\
-	英语技能：{\fontarial CET-6}\\
+	具有8年以上的软件开发经验，5年以上的全栈开发经验，3年以上的领导团队经验，拥有一定的系统设计经验。\\
+	做事专注，认真负责，喜欢钻研，相信技术改变世界。\\
+	开发技能：{\fontarial JavaScript}(熟练) {\fontarial Python}(熟悉) Go(学习中)\\
+	语言技能：普通话(母语) 英语({\fontarial CET-6})\\
 \end{body}
 
 \medskip
@@ -300,7 +329,7 @@
 
 \begin{body}
 	\vspace{14pt}
-	烹饪 羽毛球 电影\\
+	烹饪 羽毛球 看电影\\
 \end{body}
 
 \end{document}
