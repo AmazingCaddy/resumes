@@ -9,6 +9,21 @@
 \usepackage[usenames]{color}
 \usepackage{fontspec}	
 \usepackage[english]{babel}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+\makeatletter
+\def\UrlAlphabet{%
+      \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j%
+      \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t%
+      \do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D%
+      \do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N%
+      \do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X%
+      \do\Y\do\Z}
+\def\UrlDigits{\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9\do\0}
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\g@addto@macro{\UrlBreaks}{\UrlAlphabet}
+\g@addto@macro{\UrlBreaks}{\UrlDigits}
+\makeatother
 
 \setromanfont{Georgia}	
 
@@ -103,17 +118,20 @@
 	\vspace{14pt}
 	\textbf{Minerva Co. Ltd.} \hfill Full-stack Engineer \emph{2019/04 - } \\
 	\smallskip
-	As a team leader and key developer, I have been involved in the development of multiple products and services from scratch. This includes Xiaoxing Assistant (https://xiaoxing.meinenghua.com), authentication and authorization services, Xingyuan AI+RPA low-code platform, as well as upper-layer application services like application engine and intelligent approval. My primary responsibilities and achievements include:\\
+	\begin{justify}
+	As a team leader and key developer, I have been involved in the development of multiple products and services from scratch. This includes intelligent customer service, Xiaoxing Assistant (\url{https://xiaoxing.meinenghua.com}), Xingyuan AI+RPA low-code platform, as well as upper-layer application services like application engine and intelligent approval. My primary responsibilities and achievements include:\\
+	\end{justify}
+	\vspace*{-16pt}
 	\begin{itemize} \itemsep -0pt  % reduce space between items
 		\item As a team leader, I am responsible for requirements communication, system design, decision-making on design solutions, and formulation of development plans. I lead a team of approximately 5 individuals to successfully complete product development. I am adept at balancing and prioritizing factors such as functionality, technology, and cost.\\
 	\end{itemize}
 	%\smallskip
-	\vspace*{-8pt}
+	\vspace*{-6pt}
 	\begin{itemize} \itemsep -0pt  % reduce space between items
 		\item As a developer, I actively participated in the design and development of the Xingyuan AI+RPA low-code platform, along with its related application layer services.\\
 	\end{itemize}
 	%\smallskip
-	\vspace*{-8pt}
+	\vspace*{-6pt}
 	\begin{itemize} \itemsep -0pt  % reduce space between items
 		\item For Xiaoxing Assistant's product feature requirements, I took charge of system design and backend development, providing guidance for frontend development.\\
 	\end{itemize}
@@ -123,14 +141,14 @@
 %		\item Addressing the integration needs of B2B clients for existing user authentication services, I designed and implemented a third-party login solution.\\
 %	\end{itemize}
 	%\smallskip
-	\vspace*{-8pt}
+	\vspace*{-6pt}
 	\begin{itemize} \itemsep -0pt  % reduce space between items
 		\item In response to the extensive private deployment requirements of B2B clients, I developed a deployment tool enabling offline deployment. Leveraging services such as Nginx, I improved the applicability of deploying Docker images and reduced the complexity of frontend code configuration files.\\
 	\end{itemize}
 	%\smallskip
-	\vspace*{-8pt}
+	\vspace*{-6pt}
 
-	\vspace{4pt}
+	\vspace{6pt}
 	Technologies involved: \emph{Vue.js}, \emph{Node.js}, \emph{PostgreSQL}, \emph{Redis}, \emph{Nginx}, \emph{Docker}, \emph{Kubernetes}.
 	\medskip
 
@@ -202,8 +220,10 @@
 
 \begin{body}
 	\vspace{14pt}
-	I have over 8 years of software development experience, with more than 5 years of full-stack development expertise. Additionally, I have over 3 years of team leadership experience and possess a significant background in system design.\\
-	I am focused, diligent, enjoy delving deep into things, and believe that technology changes the world.\\
+	\begin{justify}
+	I have over 8 years of software development experience, with more than 5 years of full-stack development expertise. Additionally, I have over 3 years of team leadership experience and possess a significant background in system design. I am focused, diligent, enjoy delving deep into things, and believe that technology changes the world.\\
+	\end{justify}
+	\vspace{-6pt}
 	\textbf{Skills}: \emph{JavaScript} (proficient), \emph{Python} (familiar), \emph{Go} (currently learning). \\
 	\textbf{Languages}: Mandarin {(native speaker)}, English {(CET-6)}\\
 \end{body}

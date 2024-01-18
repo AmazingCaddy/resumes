@@ -7,6 +7,21 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[usenames]{color}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+\makeatletter
+\def\UrlAlphabet{%
+      \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j%
+      \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t%
+      \do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D%
+      \do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N%
+      \do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X%
+      \do\Y\do\Z}
+\def\UrlDigits{\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9\do\0}
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\g@addto@macro{\UrlBreaks}{\UrlAlphabet}
+\g@addto@macro{\UrlBreaks}{\UrlDigits}
+\makeatother
 
 % begin font setting
 \usepackage{fontspec}								% fonespec 用于支持中文，选择一个中文字体
@@ -123,7 +138,9 @@
 	\vspace{14pt}
 	\textbf{苏州美能华智能科技} \hfill 全栈工程师 {\fontarial 2019/04 - }\\
 	\smallskip
-	作为团队组长和主力研发，我从零开始参与了多个产品和服务的研发，包括认证授权服务、小星助手（https://xiaoxing.meinenghua.com）、星原AI+RPA低代码平台，以及上层的应用引擎、智能审批等应用层服务。我的主要职责和成就包括：
+	\begin{justify}
+	作为团队组长和主力研发，我从零开始参与了多个产品和服务的研发，包括智能客服系统、小星助手（\url{https://xiaoxing.meinenghua.com}）、星原AI+RPA低代码平台，以及上层的应用引擎、智能审批等应用层服务。我的主要职责和成就包括：
+	\end{justify}
 	\vspace*{-2pt}
 	\begin{itemize} \itemsep -0pt  % reduce space between items
 		\item 作为组长，负责需求沟通、系统设计、决策设计方案和制订研发计划，带领团队（约5人）完成产品开发。我能够在功能、技术和成本等众多因素之间做出权衡和取舍。\\
