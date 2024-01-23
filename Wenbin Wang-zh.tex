@@ -145,7 +145,7 @@
 	\begin{itemize} \itemsep -0pt  % reduce space between items
 		\item 作为组长，负责需求沟通、系统设计、决策设计方案和制订研发计划，带领团队（约5人）完成产品开发。我能够在功能、技术和成本等众多因素之间做出权衡和取舍。\\
 	\end{itemize}
-	\vspace*{-8pt}
+	\vspace*{-10pt}
 	\begin{itemize} \itemsep -0pt  % reduce space between items
 		\item 作为研发人员，参与设计和开发了星原AI+RPA低代码平台，以及相关的应用层服务。\\
 	\end{itemize}
@@ -216,17 +216,80 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 项目经历
-% \header{项目经历}
+\header{项目经历}
 
-% \begin{body}
-% 	\vspace{14pt}
-%  	\textbf{星原AI+RPA平台} \\
-%  	\smallskip
-% 	该平台是公司的核心产品之一，它的诞生和发展
-% 	\\
-%  \end{body}
+\begin{body}
+ 	\vspace{14pt}
+  	\textbf{智能客服系统} \\
+  	\smallskip
+	该系统可以让用户训练自己的智能机器人客服，结合给机器人配置的人工客服，提供整套的智能客服解决方案。本人带领团队（2人）从零开始设计和开发了除AI算法之外的整套系统，本人主要工作包括：
+	\vspace*{-2pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 用户认证和权限模块，支持集成客户的用户体系登录；\\
+	\end{itemize}
+	\vspace*{-10pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 机器人管理端，拥有机器人和人工客服管理功能，问答库和词库管理功能，对话历史消息的标注和训练功能，数据报表功能；\\
+	\end{itemize}
+	\vspace*{-10pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 用户端和客服端，利用WebSocket实现双向通信，利用Redis维护用户和客服状态，会话状态，实现人工客服分配，用户空闲检测等功能；\\
+	\end{itemize}
+	\vspace*{-10pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 机器人对话和对话引擎中间层，用于统一底层算法不同引起的不一致性，方便接入和替换底层算法；\\
+	\end{itemize}
+	\vspace*{-10pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 实现了离线数据报表服务，在牺牲一定时效性（5分钟）的情况下，提升了数据报表的查询性能。\\
+	\end{itemize}
 
-%  \medskip
+	\vspace{14pt}
+  	\textbf{小星助手服务} \\
+  	\smallskip
+ 	该服务基于大语言模型，可以让用户通过上传文档，让机器人学习文档内容，进而提供基于文档内容的问答服务。本人主要工作包括：
+	\vspace*{-2pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 围绕市场开拓的需求，设计产品功能，制订开发计划，确保产品的快速迭代；\\
+	\end{itemize}
+	\vspace*{-10pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 负责数据库设计和后端开发；\\
+	\end{itemize}
+	\vspace*{-10pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 带领团队重构前端代码，把手机端网页和PC端网页代码合并为一套；\\
+	\end{itemize}
+	\vspace*{-10pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 保证开发进度的同时，完善之前为了赶时间舍弃的部分。\\
+	\end{itemize}
+	
+	\vspace{14pt}
+  	\textbf{星原AI+RPA低代码平台} \\
+  	\smallskip
+ 	该平台提供了图形化的BPMN流程图制作工具（星原Studio），丰富的AI模块和运行环境，RPA指令和运行环境，让普通的实施工程师也能快速制作满足客户需求的AI+RPA流程，并发布成AI应用或者RPA任务。降低了AI算法和RPA流程的开发成本。该平台由10多个部分组成，本人负责管理中心、用户中心、星原商店、应用引擎、数据报表、发布工具等6个服务的研发工作，其余部分有AI运行时、RPA管理中心、RPA工作机、星原Studio、星原助手等。本人还参与了AI运行时v3版设计工作，此版为了提高GPU的利用率和AI运行时的并发量，将GPU的执行粒度从流程图级别降低到模块级别，但由于公司发展方向问题，最终并没有实现。\\
+	
+	\vspace{14pt}
+  	\textbf{智能审核服务} \\
+  	\smallskip
+ 	该服务主要面向政府的审批机构，它能利用AI算法把非结构化数据（比如：图片文件）转换成结构化数据，再配合审核规则，能够迅速判断一组文件是否符合所有规则要求，从而降低人工成本。本人主要工作包括：
+	\vspace*{-2pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 系统设计，对外API设计与开发；\\
+	\end{itemize}
+	\vspace*{-10pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 通用UI设计与开发；\\
+	\end{itemize}
+	\vspace*{-10pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item 按照客户需求进行UI定制化开发。\\
+	\end{itemize}
+
+\end{body}
+
+\medskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 获奖经历
@@ -311,7 +374,8 @@
 
 \begin{body}
 	\vspace{14pt}
-	具有8年以上的软件开发经验，5年以上的全栈开发经验，3年以上的领导团队经验，拥有一定的系统设计经验。\\
+	具有8年以上的软件开发经验，5年以上的全栈开发经验，拥有丰富的系统设计经验，能够在功能、技术和研发成本等众多因素之间做出权衡和取舍。\\
+	具有4年以上的领导团队经验，能够带领一个团队出色的完成研发计划。\\
 	做事专注，认真负责，喜欢钻研，相信技术改变世界。\\
 	开发技能：{\fontarial JavaScript}(熟练) {\fontarial Python}(熟悉) Go(学习中)\\
 	语言技能：普通话(母语) 英语({\fontarial CET-6})\\
