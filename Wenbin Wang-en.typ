@@ -75,7 +75,7 @@ Senior software engineer with 10+ years of experience across client applications
 #entry[Minerva Co. Ltd.][Director of R&D · #tech[2019/04 - 2024/03]][
   Led a 5-person R&D team to deliver multiple products from 0 to 1, including a B2B online customer service system, Xiaoxing Assistant, Xingyuan AI+RPA low-code platform, and intelligent audit services. Owned requirement communication, system design, solution decisions, development planning, and team delivery.
 
-  - Led SaaS operations and private deployments for 100+ B2B customers.
+  - Led SaaS operations and private deployments for dozens of B2B customers.
   - Built an offline deployment tool based on #tech[Docker] and #tech[Kubernetes], reducing private deployment and operations cost.
   - Balanced product scope, technical complexity, delivery timeline, and infrastructure cost across multiple product lines.
 
@@ -103,17 +103,17 @@ Senior software engineer with 10+ years of experience across client applications
 ]
 
 #v(0.72em)
-#project[Xingyuan AI+RPA Low-code Platform (Early Agent Platform)][
-  AI+RPA workflow platform for implementation engineers, providing BPMN workflow orchestration, AI modules, RPA instructions, and runtime environments. The platform allowed multi-step AI and automation capabilities to be composed into publishable business workflows, an early form of agent workflow platform. Owned six services including Management Center, User Center, Xingyuan Store, Application Engine, Data Reports, and Publishing Tools, and participated in AI Runtime v3 design, lowering GPU execution granularity from workflow level to module level to improve concurrency and reduce overall cost.
-]
-
-#v(0.72em)
 #project[Xiaoxing Assistant (Early RAG Application)][
   LLM-based document Q&A service that allowed users to upload documents and query answers grounded in document content, an early RAG application for enterprise knowledge-base scenarios. Owned product iteration, database design, and backend development.
 
   - Led a 5-person team to design product features around market expansion needs and ensure fast iteration.
   - Owned database design and core backend development.
   - Led frontend refactoring to merge mobile and desktop web pages into one codebase.
+]
+
+#v(0.72em)
+#project[Xingyuan AI+RPA Low-code Platform][
+  AI+RPA workflow orchestration platform for implementation engineers, providing BPMN workflow orchestration, AI modules, RPA instructions, and runtime environments. The platform allowed multi-step AI and automation capabilities to be composed into publishable business workflows. Owned six services including Management Center, User Center, Xingyuan Store, Application Engine, Data Reports, and Publishing Tools, and participated in AI Runtime v3 design, lowering GPU execution granularity from workflow level to module level to improve concurrency and reduce overall cost.
 ]
 
 #v(0.72em)
