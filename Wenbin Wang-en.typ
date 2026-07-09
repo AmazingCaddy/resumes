@@ -72,7 +72,7 @@ Senior software engineer with 10+ years of experience across client applications
 ]
 
 #v(0.68em)
-#entry[Minerva Co. Ltd.][Director of R&D · #tech[2019/04 - 2024/03]][
+#entry[Minerva Co. Ltd.][R&D Lead · #tech[2019/04 - 2024/03]][
   Led a 5-person R&D team to deliver multiple products from 0 to 1, including a B2B online customer service system, Xiaoxing Assistant, Xingyuan AI+RPA low-code platform, and intelligent audit services. Owned requirement communication, system design, solution decisions, development planning, and team delivery.
 
   - Led SaaS operations and private deployments for dozens of B2B customers.
