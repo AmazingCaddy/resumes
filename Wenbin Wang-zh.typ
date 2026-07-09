@@ -63,17 +63,17 @@
 #entry[微软（苏州）][高级软件工程师 · #en[2024/03 - 至今]][
   参与 Copilot Mac 客户端研发，负责 AI 助手类客户端的功能开发、账号迁移相关能力，以及 Chromium-based + Web 技术栈迁移中的 Web 与 Shell 集成工作。
 
-  - 前期参与纯 Native Swift 版本 Copilot Mac 客户端开发，负责面向用户的功能开发与迭代，产品 #en[WAU] 约 120K。
+  - 参与 Native Swift 版本 Copilot Mac 功能开发与迭代，产品 #en[WAU] 约 120K。
   - 负责第三方用户向 #en[MSA] 账号体系迁移相关工作，参与客户端登录、账号状态和用户迁移体验的实现。
   - 后期参与将 Mac 客户端从 Native 技术栈迁移到 Chromium-based + Web 架构，负责打通 Web 层与 Shell 层之间的 Authentication 链路。
-  - 在 #en[Swift]、#en[TypeScript]、#en[Objective-C]、#en[C++] 等技术栈之间协作，处理客户端、Web、Shell 边界上的集成问题。
+  - 跨 #en[Swift]、#en[TypeScript]、#en[Objective-C]、#en[C++] 协作，处理 Web/Native 集成问题。
 
   #muted[技术栈：#en[Swift, TypeScript, Objective-C, C++]]
 ]
 
 #v(0.68em)
 #entry[苏州美能华智能科技][研发总监 · #en[2019/04 - 2024/03]][
-  带领 5 人研发团队完成多个产品和项目从 0 到 1 的研发与交付，包括 B 端在线客服系统、小星助手（#link("https://xiaoxing.meinenghua.com")）、星原 AI+RPA 低代码平台和智能审核服务。除前后端开发外，负责需求沟通、系统设计、方案决策、研发计划制定与团队交付。
+  带领 5 人研发团队完成多个产品从 0 到 1 的研发与交付，包括 B 端在线客服系统、小星助手、星原 AI+RPA 低代码平台和智能审核服务。负责需求沟通、系统设计、方案决策、研发计划制定与团队交付。
 
   - 负责 SaaS 运维和客户私有化部署，服务 100+ B 端客户。
   - 参与开发基于 #en[Docker] 与 #en[Kubernetes] 的离线部署工具，降低私有化部署和运维成本。
@@ -86,24 +86,10 @@
 #entry[微软（苏州）][软件工程师 · #en[2015/07 - 2019/03]][
   就职于 #en[Bing Ads] 部门 #en[UCM] 团队，参与广告销售团队用户管理工具的前端研发、维护和性能优化。
 
-  - 参与优化 #en[SPA First Load Time] 和局部刷新性能，改善复杂业务页面的使用体验。
-  - 增强前端单元测试框架，降低功能迭代中的回归成本。
-  - 参与前端技术更新，将 #en[React] 与 #en[UCM] 既有代码体系整合。
+  - 负责前端功能开发、维护与性能优化，参与优化 #en[SPA First Load Time] 和局部刷新性能。
+  - 增强前端单元测试框架，参与 #en[React] 与 #en[UCM] 既有代码体系整合，降低迭代回归成本。
 
   #muted[技术栈：#en[jQuery.js, Bootstrap.js, React]]
-]
-
-#v(0.68em)
-#entry[百度][实习生 · #en[2013/07 - 2013/10]][
-  参与百度广告管家 #en[2.0] 版本业务端测试工作，使用 #en[Selenium] 开发自动化测试用例。
-]
-
-#v(0.68em)
-#entry[谷歌 - 企业社会责任部][实习生 · #en[2012/02 - 2012/08]][
-  参与益暖中华（#en[G1C1]）项目，负责 #en[Java + MySQL] 与 #en[PHP + MySQL] 网站开发。
-
-  - 负责益暖中华网站日常维护和功能升级。
-  - 参与完成主网站从 #en[Java Web] 到 #en[PHP] 的迁移。
 ]
 
 #section[代表项目]
@@ -113,7 +99,12 @@
 
   - 参与纯 Native Swift 版本客户端功能开发与迭代，产品 #en[WAU] 约 120K。
   - 参与第三方用户向 #en[MSA] 账号体系迁移，负责客户端登录、账号状态和迁移体验相关实现。
-  - 参与 Chromium-based + Web 架构迁移，打通 Web 层与 Shell/Native 层之间的 Authentication 链路。
+  - 参与 Chromium-based + Web 架构迁移，打通 Web/Native Authentication 链路。
+]
+
+#v(0.72em)
+#project[星原 AI+RPA 低代码平台（早期 Agent 平台）][
+  面向实施工程师的 AI+RPA 流程平台，提供 BPMN 流程编排、AI 模块、RPA 指令和运行环境，支持将多步骤 AI 与自动化能力编排为可发布的业务流程，是早期 Agent 工作流平台形态。本人负责管理中心、用户中心、星原商店、应用引擎、数据报表、发布工具等 6 个服务的研发，并参与 AI 运行时 v3 设计，将 GPU 执行粒度从流程图级降低到模块级，提升并发能力并降低整体成本。
 ]
 
 #v(0.72em)
@@ -123,11 +114,6 @@
   - 带领 5 人团队围绕市场开拓需求设计产品功能、制定开发计划并保障快速迭代。
   - 负责数据库设计和核心后端开发。
   - 带领团队重构前端代码，将移动端网页和 PC 端网页合并为一套代码体系。
-]
-
-#v(0.72em)
-#project[星原 AI+RPA 低代码平台（早期 Agent 平台）][
-  面向实施工程师的 AI+RPA 流程平台，提供 BPMN 流程编排、AI 模块、RPA 指令和运行环境，支持将多步骤 AI 与自动化能力编排为可发布的业务流程，是早期 Agent 工作流平台形态。本人负责管理中心、用户中心、星原商店、应用引擎、数据报表、发布工具等 6 个服务的研发，并参与 AI 运行时 v3 设计，将 GPU 执行粒度从流程图级降低到模块级，提升并发能力并降低整体成本。
 ]
 
 #v(0.72em)
@@ -141,9 +127,19 @@
 
 #section[教育经历]
 
-#entry[华东师范大学][#en[2012/09 - 2015/06]][计算机应用技术 · 硕士]
-#v(0.24em)
-#entry[华东师范大学][#en[2008/09 - 2012/06]][计算机科学与技术 · 学士]
+#grid(
+  columns: (1fr, auto),
+  column-gutter: 1em,
+  [#text(weight: "bold")[华东师范大学] · 计算机应用技术硕士],
+  [#muted[#en[2012/09 - 2015/06]]],
+)
+#v(0.18em)
+#grid(
+  columns: (1fr, auto),
+  column-gutter: 1em,
+  [#text(weight: "bold")[华东师范大学] · 计算机科学与技术学士],
+  [#muted[#en[2008/09 - 2012/06]]],
+)
 
 #section[获奖经历]
 
